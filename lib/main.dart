@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       builder: (context, child) {
         return const MaterialApp(
           debugShowCheckedModeBanner: false,
-          title: 'Payment GetWay',
+          title: 'payment_Gateway',
           home: MyCartView(),
         );
       },

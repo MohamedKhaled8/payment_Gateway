@@ -39,7 +39,9 @@ class _PaymentMethodsBottomSheetState extends State<PaymentMethodsBottomSheet> {
           const SizedBox(
             height: 32,
           ),
-          const CustomButtonBlocConsumer(),
+          CustomButtonBlocConsumer(
+            isPaypal: isPaypal,
+          ),
         ],
       ),
     );

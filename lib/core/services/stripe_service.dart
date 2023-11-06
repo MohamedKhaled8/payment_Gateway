@@ -63,7 +63,7 @@ class StripeService {
         token: ApiKeys.secretKey,
         headers: {
           'Authorization': "Bearer ${ApiKeys.secretKey}",
-          'Stripe-Version': '2023-10-16',
+          'Stripe-Version': '',
         });
 
     var ephermeralKey = EphemeralKeyModel.fromJson(response.data);

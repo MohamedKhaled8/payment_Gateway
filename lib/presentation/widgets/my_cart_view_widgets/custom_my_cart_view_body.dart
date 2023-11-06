@@ -64,8 +64,7 @@ class CustomMyCartViewBody extends StatelessWidget {
                       borderRadius: BorderRadius.circular(16)),
                   builder: (context) {
                     return BlocProvider(
-                      create: (context) =>
-                          StripePaymentCubit(CheckOutRepoImp()),
+                      create: (context) => PaymentCubit(CheckOutRepoImp()),
                       child: const PaymentMethodsBottomSheet(),
                     );
                   });
